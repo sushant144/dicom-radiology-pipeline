@@ -12,7 +12,7 @@ st.sidebar.markdown("---")
 
 page = st.sidebar.radio(
     "Navigate",
-    ["Home", "TCIA Browser", "DICOM Viewer", "PACS Dashboard"]
+    ["Home", "TCIA Browser", "DICOM Viewer", "De-identify", "PACS Dashboard"]
 )
 
 # route to pages
@@ -27,4 +27,7 @@ elif page == "DICOM Viewer":
     show()
 elif page == "PACS Dashboard":
     from pages.pacs_dashboard import show
+    show()
+elif page == "De-identify":
+    from pages.deidentify_page import show
     show()
