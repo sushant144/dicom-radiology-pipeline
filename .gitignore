@@ -3,3 +3,5 @@ dicom_files/
 __pycache__/
 *.pyc
 .DS_Store
+dicom_files/
+dicom_deidentified/
